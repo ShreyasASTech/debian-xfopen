@@ -1,0 +1,17 @@
+#################################################################################################
+#### How to setup xfce4 with openbox after installing required programs and loging into xfce ####
+#################################################################################################
+
+- Click on 'Applications'on the right end of the xfce panel.
+- Go to Settings -> Sessions & Startup
+- Enable 'LxPolkit' from the tab 'Application Autostart'.
+- Click '+Add'
+- Fill details as below:
+	Name: Openbox (Eventhough any name will work)
+	Command: openbox
+	Trigger: On Login
+- Click 'OK'
+- In the tab 'Current Session' change the state of 'xfwm4' from Immediately to Never.
+- Click 'Save Session', exit the app and restart the computer.
+
+[OPTIONAL] By changing the state of 'xfdesktop4' to Never, we can get openbox's desktop to be used instead of the one that came with xfce.
